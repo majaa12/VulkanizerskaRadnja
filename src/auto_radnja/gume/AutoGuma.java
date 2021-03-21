@@ -97,7 +97,7 @@ public class AutoGuma {
 	 * @throws java.lang.RuntimeException ako je uneta vrednost za precnik manja od 13 ili veca od 22
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new RuntimeException("Precnik van opsega");
 		this.precnik = precnik;
 	}
@@ -119,7 +119,7 @@ public class AutoGuma {
 	 * @throws java.lang.RuntimeException ako je uneta vrednost za sirinu manja od 135 ili veca od 355
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355)
 			throw new RuntimeException("Sirina van opsega");
 		this.sirina = sirina;
 	}
